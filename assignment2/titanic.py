@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from sklearn.tree import DecisionTreeClassifier
 
-df = pd.read_csv('titanic.csv')
+df = pd.read_csv('assignment2/titanic.csv')
 df.info() # Age column has missing data
 df['Cabin'] = df['Cabin'].fillna('unknown')
 df_without_na = df.dropna() # Drop all objects with missing age
