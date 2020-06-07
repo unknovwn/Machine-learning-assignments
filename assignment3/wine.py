@@ -39,7 +39,7 @@ for k in range(1, 51):
 
 max_accuracy = max(mean_accuracies)
 optimal_k = mean_accuracies.index(max_accuracy) + 1
-print('Without scale:')
+print('Without scaling:')
 print('Optimal k: {}, accuracy: {}'.format(optimal_k, max_accuracy))
 print()
 
@@ -51,5 +51,5 @@ for k in range(1, 51):
 
 max_accuracy_scaled_features = max(mean_accuracies_scaled_features)
 optimal_k_scaled_features = mean_accuracies_scaled_features.index(max_accuracy_scaled_features) + 1
-print('With scale:')
+print('With scaling:')
 print('Optimal k: {}, accuracy: {}'.format(optimal_k_scaled_features, max_accuracy_scaled_features))
